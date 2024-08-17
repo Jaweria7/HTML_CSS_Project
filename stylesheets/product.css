@@ -1,0 +1,175 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 80px; 
+    width: 100%;
+}
+
+.company-name a {
+    color: black;
+    text-decoration: none;
+}
+
+.company-name:hover h1 {
+    color: #a9b2b9;
+  }
+
+.img {
+    display: flex;
+    flex: 1;
+    background-color: lightgray; 
+    align-items: center;
+    justify-content: center;
+}
+
+.img img {
+    max-width: 100%; 
+    max-height: 100%;
+    height: auto; 
+    width: auto; 
+}
+
+.company-name {
+    display: flex;
+    flex: 2;
+    background-color: lightgray; 
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    flex: 5;
+    background-color: lightgray;
+    align-items: center;
+}
+
+.nav-link {
+    margin-left: 10px;
+    padding: 0 20px; 
+    font-size: 20px; 
+    color: #46505b;
+}
+
+.nav-link:hover {
+    color: #99c0d0;
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email {
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+#submit {
+    margin: 10px;
+    padding: 5px;
+    width: 150px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    padding: 40px;
+    grid-column-gap: 3em;
+}
+
+.img-1 img, .img-2 img, .img-3 img {
+    max-width: 100px;
+    max-height: 100px; 
+    width: auto;     
+    height: auto;  
+}
+
+.img-1, .img-2, .img-3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.description-1, .description-2, .description-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px; 
+}
+
+.g-home img, .g-hub img, .g-mini img {
+    max-width: 400px; 
+    max-height: 400px;
+    width: auto; 
+    height: auto;  
+}
+
+.g-home, .g-hub, .g-mini {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.products div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.products img {
+    max-width: 100%; 
+    height: auto;
+}
+
+.products input {
+    margin-top: 10px; /* Adds space between image and button */
+    padding: 10px 20px; /* Adds padding inside the button */
+    background-color: #b8babd; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Adds rounded corners */
+    cursor: pointer; /* Shows a pointer cursor on hover */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #b2b2b2;
+    padding: 20px 0; 
+}
