@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Survey Form</title>
+    <link rel="stylesheet" href="stylesheets/survey.css">
+</head>
+<body>
+    <div class="heading">
+        <a href="index.html">
+        <h1 id="title">Smashbox Products Survey</h1>
+        </a>
+        <p id="description">We are always striving ssto improve our products and your feedback is essential to helping us achieve that goal.</p>
+    </div>
+    
+    <div class="container">
+        <form id="survey-form" value="form">
+
+            <div class="form-group">
+                <label id="name-label" for="name">1.  Name:</label>
+                <input id="name" type="text" name="name" required placeholder="Full Name">
+            </div>           
+        
+            <div class="form-group">
+                <label id="email-label" for="email">2.  Email:</label>
+                <input id="email" type="email" name="email" required placeholder="example@mail.com">
+            </div>
+            
+            <div class="form-group">
+                <label id="number-label" for="number">3.  Age:</label>
+                <input id="number" type="number" name="number" min="5" max="99" placeholder="12+">
+            </div>
+            
+            <div class="form-group">
+                <label for="dropdown">4.  How did you first learn about our beauty products?</label>
+                <select id="dropdown" name="promotion" required>
+                    <option value="1" selected>Social Media (e.g., Instagram, Facebook)</option>
+                    <option value="2">Search Engine (e.g., Google)</option>
+                    <option value="3">Friend/Family Recommendation</option>
+                    <option value="4">In-Store (e.g., Sephora, Ulta)</option>
+                    <option value="5">Online Advertisement</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label>5.  How long have you been using our skincare products?</label>
+                <div>
+                    <input type="checkbox" value="1" checked>Less than a month
+                    <input type="checkbox" value="2">1-6 months
+                    <input type="checkbox" value="3">6-12 months
+                    <input type="checkbox" value="4">More than a year
+                </div>
+            </div>
+        
+            <div class="form-group">
+                <label>6.  How would you rate the aspects of the skincare product(s) you've used?</label>
+                <div class="radio-group">
+                    <label>Efficiency:</label>
+                    <input type="radio" name="efficiency" value="excellent" checked>Excellent
+                    <input type="radio" name="efficiency" value="very-good">Very Good
+                    <input type="radio" name="efficiency" value="good">Good
+                    <input type="radio" name="efficiency" value="poor">Poor
+                </div>
+
+                <div class="radio-group">
+                    <label>Texture and feel:</label>
+                    <input type="radio" name="texture" value="excellent" checked>Excellent
+                    <input type="radio" name="texture" value="very-good">Very Good
+                    <input type="radio" name="texture" value="good">Good
+                    <input type="radio" name="texture" value="poor">Poor
+                </div>
+
+                <div class="radio-group">
+                    <label>Absorption rate:</label>
+                    <input type="radio" name="absorption" value="excellent" checked>Excellent
+                    <input type="radio" name="absorption" value="very-good">Very Good
+                    <input type="radio" name="absorption" value="good">Good
+                    <input type="radio" name="absorption" value="poor">Poor
+                </div>
+
+                <div class="radio-group">
+                    <label>Value for money:</label>
+                    <input type="radio" name="value" value="excellent" checked>Excellent
+                    <input type="radio" name="value" value="very-good">Very Good
+                    <input type="radio" name="value" value="good">Good
+                    <input type="radio" name="value" value="poor">Poor
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="comment">Comments</label>
+                <textarea id="comment" name="comment"></textarea>
+            </div>
+        
+            <div class="form-group">
+                <input id="submit" type="submit" value="Send">
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
